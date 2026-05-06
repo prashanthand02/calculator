@@ -48,11 +48,18 @@ updateOperator();
 // function to update the second number and display the numbers when clicked
 function updatSecondNum() {
     secondNum = Number(display.textContent.slice(1));
-};
+}
 
 nums.forEach(num => {
     num.addEventListener(`click`, () => {
-        display.append(num.textContent);
+        if (num.textContent === `.`) {
+            if (!display.textContent.includes(`.`)) {
+                display.append(`.`);
+            } 
+        } else {
+            display.append(num.textContent);
+        }
+
         if (operand === undefined){
             updateFirstNum();
         } else {
