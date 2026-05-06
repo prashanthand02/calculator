@@ -16,7 +16,7 @@ function operate(num1, operator, num2) {
         return add(num1 , num2);
     } else if (operator === `-`) {
         return sub(num1 , num2);
-    } else if (operator === `*`) {
+    } else if (operator === `x`) {
         return mul(num1 , num2);
     }else if (operator === `/`) {
         return div(num1 , num2);
@@ -60,3 +60,19 @@ nums.forEach(num => {
         }  
     }) 
 });
+
+// is equal to button
+const isEqualTo = document.querySelector(`#isEqualTo`);
+isEqualTo.addEventListener(`click`, () => {
+    display.innerHTML = ``;
+    let sum = operate(firstNum, operand, secondNum);
+    display.textContent = sum;
+    firstNum = 0;
+    firstNum = Number(display.textContent);
+
+    if (operand === `/` && secondNum === 0) {
+        display.textContent = "error";
+    } else {
+        display.textContent = sum;
+    }
+})
