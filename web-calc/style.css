@@ -1,0 +1,45 @@
+#buttons {
+    width: 400px;
+    height: 350px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nums {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operators {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clear {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#isEqualTo {
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#display {
+    width: 400px;
+    height: 70px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
