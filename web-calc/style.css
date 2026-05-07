@@ -8,38 +8,68 @@
 .nums {
     width: 100px;
     height: 70px;
+    border: 1px solid #6b6868;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #fff;
 }
 .operators {
     width: 100px;
     height: 70px;
+    border: 1px solid #6b6868;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
 }
 #clear {
     width: 100px;
     height: 70px;
+    border: 1px solid #6b6868;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #fff;
 }
 #isEqualTo {
     width: 400px;
     height: 70px;
+    border: 1px solid #6b6868;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: tomato;
 }
 #display {
     width: 400px;
     height: 70px;
-    border: 1px solid black;
+    border: 1px solid #6b6868;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 5px;
     box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #313131;
+    color: #fff;
+}
+#calculator {
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    margin: 0;
 }
