@@ -79,7 +79,17 @@ isEqualTo.addEventListener(`click`, () => {
 
     if (operand === `/` && secondNum === 0) {
         display.textContent = "error";
-    } else {
-        display.textContent = sum;
+        firstNum = 0;
+        secondNum = 0;
+        operand = undefined;
     }
+})
+
+// clear button
+const clearBtn = document.querySelector(`#clear`);
+clearBtn.addEventListener(`click`, () => {
+    display.innerHTML = ``;
+    firstNum = 0;
+    secondNum = 0;
+    operand = undefined;
 })
